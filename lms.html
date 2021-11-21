@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="lms.css">
+    <title>Library Management System</title>
+</head>
+
+<body>
+    <div class="model">
+        <div class="addBooks">
+            <input type="text" placeholder="BookName" id="book">
+            <input type="text" placeholder="Author" id="author">
+            <div class="btns">
+                <button id="add-cancel">Cancel</button>
+                <button id="add">Add</button></div>
+        </div>
+        <div class="returnBooks">
+            <input type="text" placeholder="BookName" id="return-book-name">
+            <input type="text" placeholder="UserName" id="return-user-name">
+            <div class="btns">
+                <button id="return-cancel">Cancel</button>
+                <button id="return">Return</button></div>
+        </div>
+        <div class="issueBooks">
+            <input type="text" placeholder="BookName" id="issue-book-name">
+            <input type="text" placeholder="UserName" id="issue-user-name">
+            <div class="btns">
+                <button id="issue-cancel">Cancel</button>
+                <button id="issue">Issue</button></div>
+        </div>
+    </div>
+    <div class="nav">
+        <div class="logo">
+            Libraria
+        </div>
+        <div class="search">
+            <input type="search" placeholder="Search Books, Authors..." id="search" style="width: 245px;">
+        </div>
+    </div>
+    <div class="status">
+        <div class="no-of-books">
+            <h3>Total Books</h3>
+            <h3 class="number" id="num1">200</h3>
+        </div>
+        <div class="no-of-books">
+            <h3>Books Available</h3>
+            <h3 class="number" id="num2">115</h3>
+        </div>
+        <div class="funcBtns">
+            <button id="addBtn">Add a Book</button>
+            <button id="issueBtn">Issue Book</button>
+            <button id="returnBtn">Return Book</button>
+        </div>
+    </div>
+    <div class="container">
+        <table id="table">
+            <tr style="background-color: var(--secColor);">
+                <th>Books</th>
+                <th>Availability Status</th>
+            </tr>
+            <tbody id="tbody">
+            </tbody>
+        </table>
+    </div>
+    <script src="lms.js"></script>
+</body>
+
+</html>

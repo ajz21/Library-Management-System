@@ -1,0 +1,191 @@
+:root {
+    --font: 'Shippori Antique', sans-serif;
+    --mainColor: #FDF5DF;
+    --secColor: #5EBEC4;
+    --recColor: #a3d3d6;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+    font-family: var(--font);
+    color: var(--secColor);
+    cursor: default;
+}
+
+body {
+    background-color: var(--mainColor);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1pc 1pc 0pc 1pc;
+}
+
+.logo {
+    font-size: 30px;
+}
+
+.status {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 800px;
+    margin: auto;
+    font-size: 38px;
+}
+
+.no-of-books {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-gap: 1pc;
+}
+
+.model {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.4);
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.modalDisplay {
+    display: flex;
+}
+
+.returnBooks,
+.issueBooks,
+.addBooks {
+    display: none;
+}
+
+.Books {
+    background: white;
+    height: 250px;
+    width: 250px;
+    justify-content: space-around;
+    border-radius: 5px;
+    padding: 20px;
+    flex-direction: column;
+    display: flex;
+    margin: auto;
+    animation: moveDown .8s forwards;
+}
+
+.successMsg {
+    width: 200px;
+    height: 135px;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 1pc;
+    animation: scale .7s forwards;
+}
+
+@keyframes scale {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.2);
+    }
+}
+
+@keyframes moveDown {
+    25% {
+        transform: translateY(10%);
+    }
+}
+
+.funcBtns {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 1pc;
+}
+
+.btns {
+    display: flex;
+    flex-direction: row;
+    grid-gap: 5px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+input {
+    outline: none;
+    height: 30px;
+    border: solid 1px var(--recColor);
+    border-radius: 4px;
+    color: var(--secColor);
+    padding-left: 1pc;
+}
+
+.number {
+    border: solid 2px var(--secColor);
+    border-radius: 75px;
+    width: 120px;
+    height: 120px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    width: 800px;
+    margin: auto;
+    margin-top: 4pc;
+    height: 408px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: grey black;
+}
+
+.function {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button {
+    border: none;
+    border-radius: 2px;
+    background-color: var(--secColor);
+    color: var(--mainColor);
+    width: 100px;
+    height: 33px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    font-size: 25px;
+}
+
+tr:nth-child(odd) {
+    background-color: var(--recColor);
+}
+
+tr:nth-child(even) {
+    background-color: var(--secColor);
+}
+
+th,
+td {
+    width: 50%;
+    color: var(--mainColor);
+    text-align: left;
+    padding: .7pc 1pc;
+}
+
+h4 {
+    color: var(--mainColor);
+    opacity: 55%;
+}
