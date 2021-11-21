@@ -4,7 +4,7 @@ Library Management system with functionalities to add, issue and return books
 
 ## Demo
 
-<img src="icons/ezgif.com-gif-maker(1).gif" alt="My Project GIF" width="900" height="500">
+<img src="icons/ezgif.com-gif-maker(1).gif" alt="My Project GIF" width="900" height="400">
 
 ## Features 
 
